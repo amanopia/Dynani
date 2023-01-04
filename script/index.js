@@ -24,3 +24,18 @@ let targetIndex = binarySearch(arr, target);
 console.log(binarySearch(arr, target));
 let element1 = document.querySelector(`.el${targetIndex+1}`);
 element1.style.border = "4px solid red"
+
+// Linear search
+function LinearSearch(arr, target){
+    let ansIndex;
+    for(let i = 0; i<arr.length; i++){
+        if(arr[i] == target){
+            ansIndex = i;
+            return ansIndex;
+        }
+
+        return -1;
+    }
+
+    
+}
